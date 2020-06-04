@@ -1,24 +1,118 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
   <title>Bootstrap Example</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-  <style>
-  /* Make the image fully responsive */
-  .carousel-inner img {
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://bootstrap-colors-extended.herokuapp.com/bootstrap-colors.css" />
+<link rel="stylesheet" href="https://bootstrap-colors-extended.herokuapp.com/bootstrap-colors-themes.css" />
+
+ <style>
+.carousel-inner img {
     width: 100%;
     height: 100%;
   }
-  </style>
-</head>
-<body>
+  
+  .carousel-inner {
+    background-color: grey;
+    height: 100%;
+    color: info;
+    
+  }
+  
+  .carousel-control-next-icon
+ {
+   
+    color: info;
+  }
 
-<div id="demo" class="carousel slide" data-ride="carousel">
+ </style>
+
+
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-expand-sm bg-info navbar-dark fixed-top">  
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="#section1">Section 1</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#section2">Section 2</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#section3">Section 3</a>
+    </li>
+     <li class="nav-item">
+      <a class="nav-link" href="#section4">Section 4</a>
+    </li>
+  </ul>
+</nav>
+
+  
+<div id="section0" class="container-fluid bg-indigo-dark text-white" style="padding-top:70px;padding-bottom:30px">
+  
+ <center> <h1>Elizabeth Knowles</h1>
+   <h3><i>E-portfolio</i></h3></center>
+</div>
+
+<div id="section1" class="container-fluid bg-gray-light" style="padding-top:70px;padding-bottom:70px">
+ <center><h3><a href class="text-info">About</a></h3></center><br>
+<div class="row">
+   <div class="col-sm-1"></div>
+  <div class="col-sm-3">Picture goes here</div>
+  <div class="col-sm-7">Text about me goes here.</div>
+   <div class="col-sm-1"></div>
+</div>
+</div>
+
+
+<div id="section2" class="container-fluid bg-white" style="padding-top:70px;padding-bottom:70px">
+<h3><center><underline><a href class="text-info">Section title</a></underline></center></h3>
+<br><div class="container">
+  <div class="card-columns">
+    <div class="card bg-light">
+      <div class="card-body text-center">
+        <p class="card-text">Assignment 1</p>
+      </div>
+    </div>
+    <div class="card bg-light">
+      <div class="card-body text-center">
+        <p class="card-text">Assignment 2</p>
+      </div>
+    </div>
+    <div class="card bg-light">
+      <div class="card-body text-center">
+        <p class="card-text">Assignment 3</p>
+      </div>
+    </div>
+    <div class="card bg-light">
+      <div class="card-body text-center">
+        <p class="card-text">Assignment 4</p>
+      </div>
+    </div>  
+    <div class="card bg-light">
+      <div class="card-body text-center">
+        <p class="card-text">Assignment 5</p>
+      </div>
+    </div>
+      </div>
+    </div>
+</div>
+</div>
+
+<div id="section3" class="container-fluid bg-gray-light" style="padding-top:0px; padding-bottom:0px ;padding-left:0px; padding-right:0px">
+  
+<div id="demo" class="carousel slide" data-ride="carousel" data-interval=false nav-class="red" indicatorClass="red">
 
   <!-- Indicators -->
   <ul class="carousel-indicators">
@@ -28,15 +122,24 @@
   </ul>
   
   <!-- The slideshow -->
-  <div class="carousel-inner">
+ 
+    <div class="carousel-inner">
     <div class="carousel-item active">
-      Text 1
+      <img src="chicago.jpg" alt="Chicago" width="1100" height="500">
+      <div class="carousel-caption">
+    <h3> Angeles</h3>
+    <p>We had such a great time in LA!</p>
+  </div>  </div>
+   
+ 
+    <div class="carousel-item text-center p-5">
+    <h3>Assignment #1</h3>
+    <p>Explanation of what assignment #1 had to do with purpose of the class and the eportfolio or something along those lines.</p>
     </div>
+   
+    
     <div class="carousel-item">
-      Text 2
-    </div>
-    <div class="carousel-item">
-      Text 3
+      <img src="ny.jpg" alt="New York" width="1100" height="500">
     </div>
   </div>
   
@@ -48,6 +151,31 @@
     <span class="carousel-control-next-icon"></span>
   </a>
 </div>
+  
+  
+  
+  
+  
+  
+  
+</div>
+<div id="section4" class="container-fluid bg-white"style="padding-top:70px;padding-bottom:70px">
+  <h3><center><underline><a href class="text-info">Section title</a></underline></center></h3>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+</div>
 
+<div class="container-fluid bg-info">
+  <br>
+<p> This is a footer </p><br></div>
 </body>
 </html>
+
+
+
+
+https://stackoverflow.com/questions/17332431/how-can-i-control-the-speed-that-bootstrap-carousel-slides-in-items
+
+https://stackoverflow.com/questions/46087033/how-to-change-the-background-color-for-bootstraps-carousel-plugin
+
+https://www.w3schools.com/bootstrap4/bootstrap_carousel.asp
