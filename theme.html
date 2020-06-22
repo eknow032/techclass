@@ -25,6 +25,25 @@ display:inline;
 }
    
    h3 {display: inline;}
+
+  /* Make the image fully responsive */
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .carousel-inner {
+    background-color: grey;
+    height: 100%;
+    color: info;
+    
+  }
+  
+  .carousel-control-next-icon
+ {
+   
+    color: info;
+  }
  </style>
 
 
@@ -59,6 +78,51 @@ display:inline;
   <center><h2 class="text-info">C</h2><h3 class="text-info">oosing a</h3><h2 class="text-info">t</h2><h3 class="text-info">heme</h3></center>
 <p>Text, images, etc go here that should interest regular visitors to the site</p>
   </div>
+  
+  <div id="demo" class="carousel slide" data-ride="carousel" data-interval=false nav-class="red" indicatorClass="red">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+ 
+    <div class="carousel-inner">
+    
+    
+    <div class="carousel-item active">
+      <img src="chicago.jpg" alt="Chicago" width="1100" height="500">
+      <div class="carousel-caption">
+    <h3> Swipe for some theme ideas</h3>
+   
+  </div>  </div> 
+   
+ 
+    <div class="carousel-item">
+    <img src="chicago.jpg" alt="Chicago" width="1100" height="500">
+      <div class="carousel-caption">
+    <h3> Swipe for some theme ideas</h3>
+   
+  </div>  </div>  
+   
+    
+    <div class="carousel-item">
+      <img src="ny.jpg" alt="New York" width="1100" height="500">
+  </div></div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+
+<br>
 
 <center><a class="btn btn-navy"  href="teamwork.html" role="button">  << Previous topic: Teamwork </a>
 
