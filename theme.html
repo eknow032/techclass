@@ -28,16 +28,20 @@ display:inline;
 
   /* Make the image fully responsive */
   .carousel-inner img {
-    width: 100%;
-    height: 100%;
+    height: 100px;
   }
   
   .carousel-inner {
     background-color: grey;
-    height: 100%;
+    height: 100px;
     color: info;
     
   }
+  
+  .item img { 
+            object-fit: cover; 
+            height: 100%; 
+        } 
   
   .carousel-control-next-icon
  {
@@ -56,7 +60,7 @@ display:inline;
 <div class="container-fluid bg-info text-white" style="padding-top:30px;padding-bottom:30px">
   
  <center> <h1>Choosing a Theme</h1>
-   <h5><i>From magic to spie</i></h5></center>
+   <h5><i>From magic to spies</i></h5></center>
 </div>
 
 <center><div class="btn-group"><small>
@@ -74,7 +78,7 @@ display:inline;
   
  
 </div>
-<div class="container-fluid bg-white max-width:50% "style="padding-top:50px;padding-bottom:50px; padding-right:10%; padding-left:10%">
+<div class="container-fluid bg-white "style="padding-top:50px;padding-bottom:50px; padding-right:10%; padding-left:10%">
 
 <center><h2 class="text-info">C</h2><h3 class="text-info">oosing a</h3><h2 class="text-info">t</h2><h3 class="text-info">heme</h3></center>
 <p class="text-left"><br>
@@ -94,7 +98,7 @@ Your theme is a great time to link what you're doing to some program work and I 
     <div class="carousel-inner">
     
     
-    <div class="carousel-item active">
+    <div class="carousel-item active w-100">
       <img src="girlpower.jpg" alt="girlpower" max-width=50%>
         </div> 
    
