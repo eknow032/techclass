@@ -5,6 +5,6 @@
        url('font/KsILove.ttf')  format('truetype');
 }
 
-.p{
-   font-size: 8*em;
+p{
+   font-size: 8em;
 }
