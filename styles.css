@@ -4,3 +4,7 @@
   src: url('font/KsILove.woff') format('woff'),
        url('font/KsILove.ttf')  format('truetype');
 }
+
+p{
+   font-size: 1.5em;
+}
